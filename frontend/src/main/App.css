@@ -1,0 +1,60 @@
+:root {
+    --bg-core: rgb(240, 240, 240);
+    --logo-width: 100px;
+    --login-width: 170px;
+    --header-height: 40px;
+    --nav-height: 70px;
+    --catalog-height: 40px;
+    --help-height: 120px;
+    --footer-height: 40px;
+}
+
+* { box-sizing: border-box;}
+
+/* Layout Grid */
+
+.app {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    background-color: var(--bg-core);
+    grid-template-columns: var(--logo-width) 1fr var(--login-width);
+    grid-template-rows: 
+        var(--header-height)
+        var(--nav-height)
+        var(--catalog-height)
+        1fr
+        var(--help-height)
+        var(--footer-height);
+        grid-template-areas: 
+            "header header header"
+            "menu menu menu"
+            "catalog catalog catalog"
+            "content content content"
+            "helpBox helpBox helpBox"
+            "footer footer footer";
+}
+
+header.header {
+    grid-area: header;
+}
+
+nav.menu {
+    grid-area: menu;
+}
+
+nav.catalog {
+    grid-area: catalog;
+}
+
+footer.footer {
+    grid-area: footer;
+}
+
+aside.helpBox {
+    grid-area: helpBox;
+}
+
+main.content {
+    grid-area: content;
+}

@@ -1,0 +1,27 @@
+.root {
+    width: 80%;
+}
+
+.media {
+    padding-top: 56.25%;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.content .grid {
+    width: 100vw;
+}
+
+main.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
