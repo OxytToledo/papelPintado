@@ -1,5 +1,7 @@
 import React from 'react'
 import './NavBar.css'
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core'
+import { ShoppingCart } from '@material-ui/icons'
 
 import logo from '../assets/img/logo.png'
 
@@ -13,8 +15,12 @@ const NavBar = () => {
 
                 Menu + Search
 
-            <div className="login">
-                Image pushing to login
+            <div className="button">
+                <IconButton aria-label="Show cart items" color="inherit">
+                    <Badge badgeConten={2} color="secondary">
+                        <ShoppingCart/>
+                    </Badge>
+                </IconButton>
             </div>
 
         </nav>

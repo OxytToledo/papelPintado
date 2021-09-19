@@ -14,6 +14,7 @@ const products = [
 const Products = () => {
     return (
         <main className="content">
+            
             <Grid container className="grid" alignItems="center" justifyContent="center" spacing={2}>
                 {products.map((product) => (
                     <Grid item key={product.id}>

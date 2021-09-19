@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 
-import Header from '../components/template/Header'
-import NavBar from '../components/template/NavBar'
-import Catalog from '../components/template/Catalog'
-import Footer from '../components/template/Footer'
-import HelpPage from '../components/template/Help'
-import Products from '../components/template/products/Products'
+import { commerce } from '../lib/commerce'
+import { Header, NavBar, Catalog, Footer, HelpPage, Products } from '../components/template'
+
 const App = () => {
+    const [products, setProducts] = useState([])
+
+    const fetchProducts = async () => {
+        const { data } = await commerce.products.list()
+
+        setProducts(data)
+    }
+
+    useEffect(() => {
+        fetchProducts()
+    }, [])
+
+    console.log(products)
+
     return (
         <div className="app">
             <Header></Header>
