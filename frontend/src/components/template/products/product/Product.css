@@ -1,5 +1,5 @@
 .root {
-    width: 80%;
+    width: 250px;
 }
 
 .media {
@@ -11,9 +11,23 @@
     justify-content: flex-end;
 }
 
+.cardContentOne {
+    width: 250px;
+    height: 200px;
+}
+
 .cardContent {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.productName {
+    width: 220px;
+}
+
+.description {
+    overflow: hidden;
+    height: 50px;
 }
 
 main.content .grid {

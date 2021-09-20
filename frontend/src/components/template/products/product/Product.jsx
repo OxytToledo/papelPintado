@@ -3,26 +3,19 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { AddShoppingCart } from '@material-ui/icons'
 import './Product.css'
 
-import img from '../../../assets/img/img1.jpg'
-
-const Product = ({ product }) => {
-
+const Product = ({ product, onAddToCart }) => {
     return (
         <Card className="root">
-            <CardMedia className="media" image={img} title={product.name}></CardMedia>
-            <CardContent>
+            <CardMedia className="media" image={product.media.source} title={product.name}></CardMedia>
+            <CardContent className="cardContentOne">
                 <div className="cardContent">
-                    <Typography variant="h5" gutterBottom>
-                        {product.name}
-                    </Typography>
-                    <Typography variant="h5" gutterBottom>
-                        {product.price}
-                    </Typography>
+                    <Typography className="productName" variant="h5" gutterBottom>{product.name}</Typography>
+                    <Typography className="productPrice" variant="h7" gutterBottom>{product.price.formatted_with_symbol}</Typography>
                 </div>
-                <Typography variant="body2 " color="textSecondary">{product.discription}</Typography>
+                <div className="description"> <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2 " color="textSecondary"/> </div>
             </CardContent>
             <CardActions disableSpacing className="CardActions">
-                <IconButton arial-label="Add to cart">
+                <IconButton arial-label="Add to cart" onClick={() => onAddToCart(product.id, 1)}>
                     <AddShoppingCart></AddShoppingCart>
                 </IconButton>
             </CardActions>

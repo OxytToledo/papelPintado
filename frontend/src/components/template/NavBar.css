@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600;1,800&display=swap');
+
 nav.menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--bg-core);
 }
@@ -17,3 +18,37 @@ div.login {
     padding-right: 20px;
 }
 
+.markName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.markName {
+    font-size: 20pt;
+    margin-bottom: -10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #e7612c;
+    font-weight: 700;
+}
+
+.markSubname {
+    padding-left: 45px;
+    font-size: 15pt;
+    font-family: 'Montserrat', sans-serif;
+    color: #00bfc6;
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
