@@ -1,6 +1,38 @@
 aside.helpBox {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -5px 5px -5px #333;
+}
+
+.divMC {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.308);
+}
+.help {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.308);
+}
+
+.contactBox {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.308);
+}
+
+.myAccount {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: teal;
 }
+.helpDoubts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

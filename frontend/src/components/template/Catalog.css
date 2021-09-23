@@ -3,4 +3,6 @@ nav.catalog {
     justify-content: center;
     align-items: center;
     background-color: #e47e2a;
+        box-shadow: 3px 0 5px rgba(0, 0, 0, 0.521),
+                3px 0 5px rgba(0, 0, 0, 0.253);
 }

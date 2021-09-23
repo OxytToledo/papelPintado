@@ -13,7 +13,7 @@
 
 .cardContentOne {
     width: 250px;
-    height: 200px;
+    height: 220px;
 }
 
 .cardContent {
@@ -27,7 +27,7 @@
 
 .description {
     overflow: hidden;
-    height: 50px;
+    height: 46px;
 }
 
 main.content .grid {

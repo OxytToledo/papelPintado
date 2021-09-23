@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavBar.css'
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core'
-import { ShoppingCart } from '@material-ui/icons'
+import { ShoppingCart, Search } from '@material-ui/icons'
 
 import logo from '../assets/img/logo.png'
 
@@ -17,10 +17,10 @@ const NavBar = ({ totalItems }) => {
                 <span className="markSubname">Pintado</span>
             </div>
             
-            <div class="container-fluid">
+            <div class="container-fluid" className="divInput">
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input className="searchInput" type="search" placeholder="Search" />
+                    <button className="searchButton" type="submit"><Search/>Search</button>
                 </form>
             </div>
 

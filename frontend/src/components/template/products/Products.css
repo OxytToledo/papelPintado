@@ -1,5 +1,8 @@
 main.content {  
     background-color: rgb(243, 243, 243);
+    box-shadow: 
+    inset 0px 11px 8px -10px rgba(0, 0, 0, 0.568),
+    inset 0px -11px 8px -10px rgba(0, 0, 0, 0.699); 
 }
 main.content .grid {
     margin: 10px 0px;
